@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
-
 export const Wrapper = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border: solid 1px red;
+  display: grid;
+  grid-template-areas:
+    'logo icon'
+    'title title';
+
   padding: 0.7rem 2rem;
   z-index: 1;
   width: 100%;
@@ -16,13 +18,11 @@ export const Wrapper = styled.nav`
 export const Content = styled.div`
   font-size: 2.5rem;
   font-weight: 600;
-  display: flex;
-  align-items: center;
 
-  h1{
+  h1 {
     color: var(--nasa-blue);
   }
-  span{
+  span {
     color: var(--nasa-orange);
   }
 `;
