@@ -2,20 +2,22 @@ import React from 'react';
 import PhotoItem from './PhotoItem';
 import PropTypes from 'prop-types';
 import Spinner from '../layout/Spinner';
+import { Wrapper } from './Photos.styles';
 
 const Photos = ({ photos, loading }) => {
   if (loading) {
     return <Spinner />;
   } else {
     return (
-      <div className='p-4 grid grid-flow-row md:grid-flow-col md:gap-4'>
+      <Wrapper className='p-4 grid grid-flow-row'>
         {photos.map((photo) => (
           <PhotoItem key={photo.title} photo={photo} />
         ))}
-      </div>
+      </Wrapper>
     );
   }
 };
+
 
 Photos.propTypes = {
   photos: PropTypes.array.isRequired,

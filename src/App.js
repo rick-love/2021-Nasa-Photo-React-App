@@ -30,7 +30,7 @@ class App extends Component {
     return (
       <div className='App'>
         <Navbar />
-        <div className='container'>
+        <div className='container m-auto'>
           <Photos loading={this.state.loading} photos={this.state.photos} />
         </div>
 

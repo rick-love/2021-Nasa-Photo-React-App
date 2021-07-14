@@ -11,6 +11,7 @@ import {
 const PhotoItem = ({ photo: { explanation, title, url } }) => {
   return (
     <Wrapper className=''>
+
       <div>
         <PhotoTitle className='p-4 font-bold text-lg'>{title}</PhotoTitle>
       </div>
@@ -21,6 +22,7 @@ const PhotoItem = ({ photo: { explanation, title, url } }) => {
     </Wrapper>
   );
 };
+
 
 PhotoItem.propTypes = {
   photo: PropTypes.object,
