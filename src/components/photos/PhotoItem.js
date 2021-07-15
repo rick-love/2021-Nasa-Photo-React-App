@@ -11,18 +11,18 @@ import {
 const PhotoItem = ({ photo: { explanation, title, url } }) => {
   return (
     <Wrapper className=''>
-
       <div>
         <PhotoTitle className='p-4 font-bold text-lg'>{title}</PhotoTitle>
       </div>
       <div className='grid grid-cols-1'>
         <PhotoImage className='md:h-60 w-full bg-cover' src={url} alt='' />
-        <PhotoExplanation className='p-3'>{explanation}</PhotoExplanation>
+        <PhotoExplanation className='p-3'>
+          {explanation.split(' ').splice(0, 20).join(' ')}...
+        </PhotoExplanation>
       </div>
     </Wrapper>
   );
 };
-
 
 PhotoItem.propTypes = {
   photo: PropTypes.object,

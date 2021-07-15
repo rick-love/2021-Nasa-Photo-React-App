@@ -7,9 +7,10 @@ border-radius: 10px;
 `;
 
 export const PhotoTitle = styled.h2`
+height: 100px;
 `;
 export const PhotoImage = styled.img`
-
+height: 250px;
 `;
 export const PhotoExplanation = styled.p`
 `;

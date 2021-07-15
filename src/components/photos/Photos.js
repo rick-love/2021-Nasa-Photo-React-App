@@ -18,7 +18,6 @@ const Photos = ({ photos, loading }) => {
   }
 };
 
-
 Photos.propTypes = {
   photos: PropTypes.array.isRequired,
   loading: PropTypes.bool.isRequired,
